@@ -1,0 +1,70 @@
+body{
+    margin: 0;    /* da ni prosrora med screeni pac c dm vec bi biu bolj na sredi*/
+    display: flex;
+    justify-content: center; /*zdej je na sredi screena*/
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0 ,0%, 95%);
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0 ,0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    background-color: hsl(0 ,0%, 20%);
+    color : white
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: #505050;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{ /*ce hpveram nad btoni se bo lightes sou visje*/
+    background-color: hsl(0 ,0%, 25%);
+
+}
+button:active{ /*ce pa klines rata neke barve :))*/
+    background-color: hsl(0 ,0%, 20%);
+}
+
+.operator-btn{
+    background-color: #E69A28;
+}
+.operator-btn:hover{
+    background-color: hsl(36 ,83%, 40%);
+}
+.operator-btn:active{
+    background-color: hsl(36 ,83%, 30%);
+}
+.o-btn{
+    background-color: hsl(0 ,0%, 25%);
+}
+.o-btn:hover{
+    background-color: hsl(0 ,0%, 22%);
+}
+.o-btn:active{
+    background-color: hsl(0 ,0%, 18%);
+}
+
